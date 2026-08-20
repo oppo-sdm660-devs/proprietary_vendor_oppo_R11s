@@ -56363,7 +56363,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.frameworks.fingerprintservice@1.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
@@ -56426,7 +56426,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
@@ -56456,7 +56456,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
