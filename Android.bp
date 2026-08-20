@@ -5,6 +5,7 @@
 soong_namespace {
     imports: [
         "device/oppo/R11s",
+        "device/oppo/sdm660-common",
         "hardware/qcom-caf/sdm660",
         "vendor/oppo/sdm660-common",
     ],
@@ -56338,71 +56339,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libmmcamera_eeprom_util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_tuning",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_tuning.so",
-            ],
-            shared_libs: [
-                "libmmcamera_tuning_lookup",
-                "libmmcamera2_mct",
-                "libmmcamera2_stats_modules",
-                "libmmcamera2_iface_modules",
-                "libmmcamera2_isp_modules",
-                "libmmcamera2_sensor_modules",
-                "libmmcamera2_pproc_modules",
-                "libmmcamera2_imglib_modules",
-                "libmmcamera_eztune_module",
-                "libmm-qcamera",
-                "liblog",
-                "libcutils",
-                "libfastcvopt",
-                "libmmcamera_dbg",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_tuning_lookup",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_tuning_lookup.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libfastcvopt",
                 "libc++",
                 "libc",
                 "libm",

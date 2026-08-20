@@ -2313,8 +2313,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_tintless_bg_pca_algo \
     libmmcamera_truly_cma481_eeprom \
     libmmcamera_truly_cmb433_eeprom \
-    libmmcamera_tuning \
-    libmmcamera_tuning_lookup \
     android.frameworks.fingerprintservice@1.0 \
     libqfp-service \
     vendor.oppo.hardware.commondcs@1.0 \
