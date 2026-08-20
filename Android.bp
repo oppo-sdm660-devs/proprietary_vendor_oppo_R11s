@@ -56283,6 +56283,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so",
             ],
             shared_libs: [
+                "liblog",
                 "libdl",
                 "libcutils",
                 "libmmcamera_dbg",
@@ -56523,7 +56524,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libqfp-service",
                 "liblog",
-                "libhidltransport",
+                "libhidlbase",
                 "android.hardware.biometrics.fingerprint@2.1",
                 "vendor.qti.hardware.fingerprint@1.0",
                 "libc++",
