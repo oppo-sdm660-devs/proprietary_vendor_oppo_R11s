@@ -2218,11 +2218,12 @@ PRODUCT_PACKAGES += \
     libchromatix_s5k3p8sp_postproc \
     libchromatix_s5k3p8sp_preview \
     libchromatix_s5k3p8sp_snapshot \
+    libmmcamera2_mct_shimlayer \
+    libmmcamera2_q3a_core \
+    libmmcamera2_stats_modules \
     libmmcamera_atmel_at24c32e_eeprom \
     libmmcamera_csidtg \
-    libmmcamera_dummyalgo \
     libmmcamera_dw9761b_2d_eeprom \
-    libmmcamera_faceproc \
     libmmcamera_gc2375h \
     libmmcamera_hvx_add_constant \
     libmmcamera_hvx_grid_sum \
@@ -2310,7 +2311,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_sunny_gt24c64a_imx362_eeprom \
     libmmcamera_sunny_q13v06k_eeprom \
     libmmcamera_sunny_q5v41b_eeprom \
-    libmmcamera_tintless_bg_pca_algo \
     libmmcamera_truly_cma481_eeprom \
     libmmcamera_truly_cmb433_eeprom \
     android.frameworks.fingerprintservice@1.0 \
