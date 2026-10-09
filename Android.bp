@@ -53838,6 +53838,105 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmcamera2_mct_shimlayer",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmmcamera2_mct_shimlayer.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmmcamera2_mct",
+                "libmmcamera2_stats_modules",
+                "libmmcamera2_iface_modules",
+                "libmmcamera2_isp_modules",
+                "libmmcamera2_sensor_modules",
+                "libmmcamera2_pproc_modules",
+                "libmmcamera2_imglib_modules",
+                "libmmcamera_thread_services",
+                "libmmcamera_dbg",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_q3a_core",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmmcamera2_q3a_core.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmmcamera2_stats_algorithm",
+                "libmmcamera2_stats_lib",
+                "libmmcamera_dbg",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_stats_modules",
+    owner: "oppo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmmcamera2_stats_modules.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmmcamera2_mct",
+                "libmmcamera2_stats_lib",
+                "libmmcamera2_stats_algorithm",
+                "libui",
+                "libxml2",
+                "libgui_vendor",
+                "libutils",
+                "libmmcamera_dbg",
+                "libhidlbase",
+                "android.frameworks.sensorservice@1.0",
+                "libmmcamera2_is",
+                "libsensor1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmcamera_atmel_at24c32e_eeprom",
     owner: "oppo",
     strip: {
@@ -53891,34 +53990,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_dummyalgo",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_dummyalgo.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libmmcamera_imglib",
-                "libmmcamera_dbg",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmcamera_dw9761b_2d_eeprom",
     owner: "oppo",
     strip: {
@@ -53937,30 +54008,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmcamera_faceproc",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_faceproc.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
             ],
         },
     },
@@ -56272,33 +56319,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmcamera_tintless_bg_pca_algo",
-    owner: "oppo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libcutils",
-                "libmmcamera_dbg",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmcamera_truly_cma481_eeprom",
     owner: "oppo",
     strip: {
@@ -56538,6 +56558,21 @@ cc_prebuilt_binary {
     strip: {
         none: true,
     },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_relighting_pro_image",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_relighting_pro_image.so"],
+            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
     prefer: true,
     soc_specific: true,
 }
