@@ -2319,3 +2319,5 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fingerprint@1.0 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1-service \
     qfp-daemon
+
+PRODUCT_PACKAGES += libarcsoft_relighting_pro_image

@@ -56561,3 +56561,18 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_relighting_pro_image",
+    owner: "oppo",
+    strip: { none: true },
+    target: {
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libarcsoft_relighting_pro_image.so"],
+            shared_libs: ["libmpbase", "liblog", "libdl", "libc", "libm"],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
